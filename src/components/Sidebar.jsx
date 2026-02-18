@@ -67,7 +67,7 @@ function SidebarContent({ onNavigate, onClose, onSelectMenu, activeMenu }) {
 
   return (
     <div className="flex h-full flex-col">
-      <div className="mb-8 px-5">
+      <div className="mb-8 px-5 pt-6">
         <div className="inline-flex items-center gap-3">
           <div className="grid h-9 w-9 place-content-center rounded-xl bg-blue-500 font-bold text-white shadow-[0_0_16px_rgba(59,130,246,0.55)]">
             G
