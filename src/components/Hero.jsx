@@ -13,9 +13,9 @@ function Hero({ onExploreCourses, onSeeWorks }) {
           Established Excellence
         </p>
         <h1 className="text-5xl font-bold leading-tight text-white xl:text-6xl">
-          GDC Computer
+          Global Design 
           <span className="block bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">
-            Design
+            Computer
           </span>
         </h1>
         <p className="max-w-xl text-lg text-slate-300">
