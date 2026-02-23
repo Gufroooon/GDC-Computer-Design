@@ -417,7 +417,7 @@ function ContactUsContent() {
         <ContentCard
           icon={Phone}
           title="Phone"
-          items={['+62 (251) 888-2345', '+62 811-2233-4455 (WhatsApp)']}
+          items={['+6287870025212 (WhatsApp)']}
         />
         <ContentCard
           icon={Mail}
@@ -427,7 +427,7 @@ function ContactUsContent() {
         <ContentCard
           icon={MapPin}
           title="Address"
-          items={['Jl. Raya Pajajaran No. 123', 'Bogor Tengah, Jawa Barat']}
+          items={['Jl. Komp. Villa Ciomas Indah Blok O-5 No.3 Kel.Ciomas Rahayu Kec Ciomas Bogor, Jawa Barat']}
         />
       </div>
     </section>
