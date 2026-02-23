@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 
 function Footer() {
   return (
-    <footer className="rounded-2xl border border-white/10 bg-slate-900/65 p-8 backdrop-blur-md">
+    <footer className="border-t border-white/10 pt-10">
       <div className="grid gap-8 lg:grid-cols-3">
         <div>
           <h3 className="text-2xl font-semibold text-white">GDC Computer Design</h3>
@@ -36,13 +36,13 @@ function Footer() {
           <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
             Location
           </h4>
-          <div className="mt-4 rounded-xl border border-white/10 bg-gradient-to-r from-blue-500/20 to-slate-800/40 p-5 text-slate-200">
+          <div className="mt-4 text-slate-200">
             Find us in Bogor, West Java. Campus access is available for weekday
             and weekend classes.
           </div>
         </div>
       </div>
-      <div className="mt-8 border-t border-white/10 pt-5 text-center text-sm text-slate-400">
+      <div className="mt-8 border-t border-white/10 py-5 text-center text-sm text-slate-400">
         Copyright 2026 GDC Computer Design. All rights reserved.
       </div>
     </footer>

@@ -6,6 +6,9 @@ import CourseCard from '../components/CourseCard'
 import Updates from '../components/Updates'
 import Footer from '../components/Footer'
 import MenuContent from '../components/MenuContent'
+import sketchupImage from '../assets/images/sketchup.avif'
+import autocadImage from '../assets/images/autocad.avif'
+import graphicDesignImage from '../assets/images/graphic-design.jpg'
 
 const courses = [
   {
@@ -14,8 +17,7 @@ const courses = [
     badge: 'Bestseller',
     rating: '4.9 (120 Reviews)',
     description: 'Learn to build professional 3D models and high-quality scenes.',
-    image:
-      'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80',
+    image: sketchupImage,
   },
   {
     courseName: 'AutoCAD',
@@ -23,8 +25,7 @@ const courses = [
     badge: 'Professional',
     rating: '4.8 (85 Reviews)',
     description: 'Industry standard 2D drafting and technical documentation skills.',
-    image:
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80',
+    image: autocadImage,
   },
   {
     courseName: 'Graphic Design',
@@ -32,8 +33,7 @@ const courses = [
     badge: 'Creative',
     rating: '5.0 (42 Reviews)',
     description: 'Build complete visual identity with Adobe Creative workflows.',
-    image:
-      'https://images.unsplash.com/photo-1515378791036-0648a814c963?auto=format&fit=crop&w=900&q=80',
+    image: graphicDesignImage,
   },
 ]
 
