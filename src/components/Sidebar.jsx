@@ -16,6 +16,7 @@ import {
   X,
 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
+import logo from '../assets/images/logo.jpeg'
 
 const courses = [
   {
@@ -68,16 +69,12 @@ function SidebarContent({ onNavigate, onClose, onSelectMenu, activeMenu }) {
   return (
     <div className="flex h-full flex-col">
       <div className="mb-8 px-5 pt-6">
-        <div className="inline-flex items-center gap-3">
-          <div className="grid h-9 w-9 place-content-center rounded-xl bg-blue-500 font-bold text-white shadow-[0_0_16px_rgba(59,130,246,0.55)]">
-            G
-          </div>
-          <div>
-            <p className="text-lg font-semibold text-white">GDC</p>
-            <p className="text-xs uppercase tracking-[0.2em] text-blue-200">
-              Computer Design
-            </p>
-          </div>
+        <div className="flex justify-center">
+          <img
+            src={logo}
+            alt="GDC logo"
+            className="h-16 w-auto max-w-full object-contain"
+          />
         </div>
       </div>
 

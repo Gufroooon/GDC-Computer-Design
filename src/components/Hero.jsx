@@ -18,9 +18,8 @@ function Hero({ onExploreCourses, onSeeWorks }) {
             Computer
           </span>
         </h1>
-        <p className="max-w-xl text-lg text-slate-300">
-          Master your creativity in the heart of Bogor. Professional training
-          for architecture, visual communication, and digital design.
+        <p className="max-w-2xl whitespace-pre-line text-lg text-slate-300">
+          {"Selamat datang di GDC Kursus Komputer Desain di Kota Bogor. Semoga kegiatan ini dapat menambah keterampilan dan kreativitas peserta sehingga bermanfaat untuk masa depan."}
         </p>
         <div className="flex flex-wrap gap-3">
           <button
