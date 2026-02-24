@@ -21,22 +21,22 @@ const courses = [
   {
     name: 'SketchUp',
     icon: Waypoints,
-    submenu: ['Dasar', 'Menengah', 'Lanjutan'],
+    submenu: ['Level 1', 'Level 2'],
   },
   {
     name: 'AutoCAD',
     icon: Ruler,
-    submenu: ['Dasar', 'Menengah', 'Lanjutan'],
+    submenu: ['Level 1', 'Level 2'],
   },
   {
     name: '3D Studio Max',
     icon: FolderOpen,
-    submenu: ['Dasar', 'Menengah', 'Lanjutan'],
+    submenu: ['Level 1', 'Level 2'],
   },
   {
     name: 'Graphic Design',
     icon: PenTool,
-    submenu: ['Dasar', 'Menengah', 'Lanjutan'],
+    submenu: ['Program'],
   },
   {
     name: 'DTP',
@@ -116,7 +116,7 @@ function SidebarContent({ onNavigate, onClose, onSelectMenu, activeMenu }) {
                       onSelectMenu?.({
                         type: 'course',
                         course: course.name,
-                        section: 'Dasar',
+                        section: course.submenu[0],
                       })
                     }}
                     className="flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-slate-200 transition hover:bg-white/5"

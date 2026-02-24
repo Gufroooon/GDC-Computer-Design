@@ -27,10 +27,11 @@ function Footer() {
               <Phone className="h-4 w-4 text-blue-300" />
               +6287870025212
             </a >
-            <p className="flex items-center gap-2">
+            <a className="flex items-center gap-2"
+            href="mailto:info@gdc-design.id">
               <Mail className="h-4 w-4 text-blue-300" />
               info@gdc-design.id
-            </p>
+            </a>
           </div>
         </div>
 

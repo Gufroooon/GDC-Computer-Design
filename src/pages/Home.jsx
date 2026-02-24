@@ -40,8 +40,18 @@ const courses = [
 function Home({ onNavigate }) {
   const [activeMenu, setActiveMenu] = useState({ type: 'home' })
   const isHomeView = activeMenu.type === 'home'
+  const getDefaultSection = (courseName) =>
+    courseName === 'Graphic Design'
+      ? 'Program'
+      : ['SketchUp', 'AutoCAD', '3D Studio Max'].includes(courseName)
+      ? 'Level 1'
+      : 'Dasar'
   const openCourseOverview = (courseName) =>
-    setActiveMenu({ type: 'course', course: courseName, section: 'Dasar' })
+    setActiveMenu({
+      type: 'course',
+      course: courseName,
+      section: getDefaultSection(courseName),
+    })
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_#1e3a8a_0%,_#0f172a_45%,_#020617_100%)] text-white">

@@ -20,31 +20,20 @@ export const COURSE_NAMES = [
   'Web Design',
 ]
 
+const TWO_LEVEL_COURSES = ['SketchUp', 'AutoCAD', '3D Studio Max']
+const SINGLE_LEVEL_COURSES = ['Graphic Design']
+
 const courseContent = {
   SketchUp: {
     overview:
-      'Program SketchUp difokuskan pada pembuatan model 3D arsitektur, interior, dan presentasi visual yang cepat serta presisi.',
+      '2D, 3D, V-RAY.',
     skills: [
-      'Module 1: Pengenalan Interface',
-      'Module 2: Drawing Tools',
-      'Module 3: Modifikasi Object',
-      'Module 4: Group & Component',
-      'Module 5: Material & Rendering Basic',
-      'Module 6: Project Mini House',
+      'Peserta program ini akan diberikan teknik pembuatan gambar 2 Dimensi (2D) dan 3 Dimensi (3D), Layout dan Basic Vray untuk kasus-kasus Interior, Architecture, Landscape, Furniture dan lainnya.',
+      'Diharapkan kasus tersebut peserta akan mengetahui dan menguasai secara luas tentang program ini.',
     ],
     intermediateSkills: [
-      'Module 1: Modeling Bangunan Bertingkat',
-      'Module 2: Advanced Component Management',
-      'Module 3: Scene Composition and Camera Angle',
-      'Module 4: Material Realism Improvement',
-      'Module 5: Workflow Optimization',
-    ],
-    advancedSkills: [
-      'Module 1: Complex Interior-Exterior Project',
-      'Module 2: High Detail Asset Integration',
-      'Module 3: Presentation Board Professional',
-      'Module 4: Client Revision Workflow',
-      'Module 5: Final Portfolio Project',
+      'Peserta program ini akan diberikan teknik pembuatan gambar 2 Dimensi (2D) dan 3 Dimensi (3D), Layout dan Basic Vray untuk kasus-kasus Interior, Architecture, Landscape, Furniture dan lainnya.',
+      'Diharapkan kasus tersebut peserta akan mengetahui dan menguasai secara luas tentang program ini.',
     ],
     schedule: [
       'Senin & Rabu - 19:00 to 21:00',
@@ -59,23 +48,16 @@ const courseContent = {
   },
   AutoCAD: {
     overview:
-      'Program AutoCAD membahas teknik drafting 2D, detail kerja bangunan, dan dokumentasi teknis sesuai standar industri.',
+      '2D, 3D, MATERIAL, LIGHT, RENDER.',
     skills: [
-      '2D drafting and annotation standards',
-      'Technical drawing and layout plotting',
-      'Productive command workflow and shortcuts',
+      'Peserta program ini akan diberikan teknik pembuatan gambar 2 dimensi (2D) dan 3 dimensi (3D).',
+      'Bidang keahlian Interior, Architecture, Furniture, Engineering, dan lainnya.',
+      'Diharapkan peserta kursus akan cepat mengetahui dan menguasai secara luas tentang program AutoCAD.',
     ],
     intermediateSkills: [
-      'Advanced layer management and standards',
-      'Dynamic block and attribute workflow',
-      'Detailed construction drawing setup',
-      'Layout plotting for multi-sheet projects',
-    ],
-    advancedSkills: [
-      'Complex technical detailing project',
-      'Production-ready drawing package',
-      'Quality control and revision tracking',
-      'Portfolio-based final CAD submission',
+      'Peserta program ini akan diberikan teknik pembuatan gambar 2 dimensi (2D) dan 3 dimensi (3D).',
+      'Bidang keahlian Interior, Architecture, Furniture, Engineering, dan lainnya.',
+      'Diharapkan peserta kursus akan cepat mengetahui dan menguasai secara luas tentang program AutoCAD.',
     ],
     schedule: [
       'Selasa & Kamis - 19:00 to 21:00',
@@ -90,23 +72,14 @@ const courseContent = {
   },
   '3D Studio Max': {
     overview:
-      'Program 3D Studio Max fokus pada visualisasi arsitektur, rendering realistis, dan optimasi pipeline produksi.',
+      '2D, 3D, MAT, LIGHT, RENDER, ANIMATIONS.',
     skills: [
-      'Modeling and scene optimization',
-      'Realistic lighting and rendering setup',
-      'Post-processing pipeline for presentation',
+      'Peserta program ini akan diberikan teknik pembuatan gambar 2D, 3D, Animasi bidang Interior, Architecture, Landscape, Furniture dan lainnya.',
+      'Diharapkan peserta kursus akan cepat mengetahui dan menguasai secara luas tentang program 3D Studio MAX.',
     ],
     intermediateSkills: [
-      'Intermediate modeling topology and cleanup',
-      'Photoreal material and texture setup',
-      'Render pass and compositing workflow',
-      'Scene optimization for faster output',
-    ],
-    advancedSkills: [
-      'High-end architectural visualization project',
-      'Lighting storytelling and art direction',
-      'Advanced render tuning and noise control',
-      'Final production workflow for portfolio',
+      'Peserta program ini akan diberikan teknik pembuatan gambar 2D, 3D, Animasi bidang Interior, Architecture, Landscape, Furniture dan lainnya.',
+      'Diharapkan peserta kursus akan cepat mengetahui dan menguasai secara luas tentang program 3D Studio MAX.',
     ],
     schedule: [
       'Senin & Kamis - 19:30 to 21:30',
@@ -121,23 +94,14 @@ const courseContent = {
   },
   'Graphic Design': {
     overview:
-      'Program Graphic Design membahas prinsip desain visual, branding, dan eksekusi materi promosi digital.',
+      'Program yang tepat akan menjadikan anda menjadi ahli dibidang ini.',
     skills: [
-      'Design principles and typography',
-      'Brand identity system and guidelines',
-      'Social media and campaign design assets',
+      'Program yang tepat akan menjadikan anda menjadi ahli dibidang ini, anda akan dilatih untuk terbiasa dengan pembuatan gambar mudah sampai yang tersulit, semuanya akan dikerjakan dengan menyenangkan.',
+      'Materi: Adobe Photoshop, Adobe Illustrator, Adobe InDesign dan Corel Draw',
     ],
     intermediateSkills: [
-      'Visual hierarchy and grid system',
-      'Brand collateral development',
-      'Campaign asset consistency workflow',
-      'Design critique and iterative improvement',
-    ],
-    advancedSkills: [
-      'Complete brand system case study',
-      'Creative direction and artboard strategy',
-      'Multi-channel campaign simulation',
-      'Portfolio-ready branding presentation',
+      'Program yang tepat akan menjadikan anda menjadi ahli dibidang ini, anda akan dilatih untuk terbiasa dengan pembuatan gambar mudah sampai yang tersulit, semuanya akan dikerjakan dengan menyenangkan.',
+      'Materi: Adobe Photoshop, Adobe Illustrator, Adobe InDesign dan Corel Draw',
     ],
     schedule: [
       'Selasa & Jumat - 19:00 to 21:00',
@@ -292,7 +256,7 @@ function CoursesDirectory({ onSelectCourse }) {
       <Banner
         label="Explore Courses"
         title="All Available Courses"
-        description="Pilih course yang ingin dipelajari. Setelah dipilih, kamu akan langsung masuk ke level Dasar."
+        description="Pilih course yang ingin dipelajari. Setelah dipilih, kamu akan langsung masuk ke level pertama yang tersedia."
       />
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {COURSE_NAMES.map((name) => (
@@ -307,7 +271,7 @@ function CoursesDirectory({ onSelectCourse }) {
           >
             <p className="text-lg font-semibold text-white">{name}</p>
             <p className="mt-2 text-sm text-slate-300">
-              Open level Dasar, Menengah, dan Lanjutan.
+              Klik untuk melihat level dan materi kursus.
             </p>
           </motion.button>
         ))}
@@ -320,69 +284,135 @@ function CourseMenuContent({ selection }) {
   const data = courseContent[selection.course]
   if (!data) return null
 
-  const sectionLabel = selection.section || 'Dasar'
+  const hasTwoLevels = TWO_LEVEL_COURSES.includes(selection.course)
+  const hasSingleLevel = SINGLE_LEVEL_COURSES.includes(selection.course)
+  const sectionLabel = selection.section || (hasSingleLevel ? 'Program' : hasTwoLevels ? 'Level 1' : 'Dasar')
   const sectionMap = {
-    Dasar: {
-      title: `${selection.course} - Dasar`,
-      description: `${data.overview} Level dasar fokus pada fondasi tools, workflow, dan latihan awal proyek.`,
-      cards: [
-        { icon: BookOpenCheck, title: 'Materi Dasar', items: data.skills },
-        {
-          icon: CalendarCheck2,
-          title: 'Biaya Kursus',
-          items: [
-            'Durasi 10x pertemuan / 2 Jam',
-            'Biaya Rp. 1.500.000,-',
-            'Kelas Privat (1 Siswa : 1 Pengajar)',
-          ],
-        },
-      ],
-    },
-    Menengah: {
-      title: `${selection.course} - Menengah`,
-      description:
-        'Level menengah berfokus pada peningkatan kecepatan kerja, kualitas hasil, dan eksekusi project real-case.',
-      cards: [
-        {
-          icon: BookOpenCheck,
-          title: 'Materi Menengah',
-          items: data.intermediateSkills,
-        },
-        {
-          icon: Users,
-          title: 'Biaya Kursus',
-          items: [
-            'Durasi 10x pertemuan / 2 Jam',
-            'Biaya Rp. 2.750.000,-',
-            'Kelas Privat (1 Siswa : 1 Pengajar)',
-          ],
-        },
-      ],
-    },
-    Lanjutan: {
-      title: `${selection.course} - Lanjutan`,
-      description:
-        'Level lanjutan menekankan output profesional, konsultasi intensif, dan persiapan portofolio industri.',
-      cards: [
-        {
-          icon: BookOpenCheck,
-          title: 'Materi Lanjutan',
-          items: data.advancedSkills,
-        },
-        {
-          icon: Users,
-         title: 'Biaya Kursus',
-          items: [
-            'Durasi 10x pertemuan / 2 Jam',
-            'Biaya Rp. 3.000.000,-',
-            'Kelas Privat (1 Siswa : 1 Pengajar)',
-          ],
-        },
-      ],
-    },
+    ...(hasSingleLevel
+      ? {
+          Program: {
+            title: selection.course,
+            description: data.overview,
+            cards: [
+              { icon: BookOpenCheck, title: 'Materi', items: data.skills },
+              {
+                icon: CalendarCheck2,
+                title: 'Biaya Kursus',
+                items: [
+                  'Durasi 10x pertemuan / 2 Jam',
+                  'Biaya Rp. 1.250.000,-',
+                  'Kelas Privat (1 Siswa : 1 Pengajar)',
+                ],
+              },
+            ],
+          },
+        }
+      : hasTwoLevels
+      ? {
+          'Level 1': {
+            title: `${selection.course} - Level 1`,
+            description: data.overview,
+            cards: [
+              { icon: BookOpenCheck, title: 'Materi Level 1', items: data.skills },
+              {
+                icon: CalendarCheck2,
+                title: 'Biaya Kursus',
+                items: [
+                  'Durasi 10x pertemuan / 2 Jam',
+                  'Biaya Rp. 1.350.000,-',
+                  'Kelas Privat (1 Siswa : 1 Pengajar)',
+                ],
+              },
+            ],
+          },
+          'Level 2': {
+            title: `${selection.course} - Level 2`,
+            description: `Pendalaman materi ${selection.course} dari Level 1 ke studi kasus lanjutan.`,
+            cards: [
+              {
+                icon: BookOpenCheck,
+                title: 'Materi Level 2',
+                items: data.intermediateSkills,
+              },
+              {
+                icon: Users,
+                title: 'Biaya Kursus',
+                items: [
+                  'Durasi 10x pertemuan / 2 Jam',
+                  'Biaya Rp. 1.450.000,-',
+                  'Kelas Privat (1 Siswa : 1 Pengajar)',
+                ],
+              },
+            ],
+          },
+        }
+      : {
+          Dasar: {
+            title: `${selection.course} - Dasar`,
+            description: `${data.overview} `,
+            cards: [
+              { icon: BookOpenCheck, title: 'Materi Dasar', items: data.skills },
+              {
+                icon: CalendarCheck2,
+                title: 'Biaya Kursus',
+                items: [
+                  'Durasi 10x pertemuan / 2 Jam',
+                  'Biaya Rp. 1.500.000,-',
+                  'Kelas Privat (1 Siswa : 1 Pengajar)',
+                ],
+              },
+            ],
+          },
+          Menengah: {
+            title: `${selection.course} - Menengah`,
+            description:
+              'Level menengah berfokus pada peningkatan kecepatan kerja, kualitas hasil, dan eksekusi project real-case.',
+            cards: [
+              {
+                icon: BookOpenCheck,
+                title: 'Materi Menengah',
+                items: data.intermediateSkills,
+              },
+              {
+                icon: Users,
+                title: 'Biaya Kursus',
+                items: [
+                  'Durasi 10x pertemuan / 2 Jam',
+                  'Biaya Rp. 2.750.000,-',
+                  'Kelas Privat (1 Siswa : 1 Pengajar)',
+                ],
+              },
+            ],
+          },
+          Lanjutan: {
+            title: `${selection.course} - Lanjutan`,
+            description:
+              'Level lanjutan menekankan output profesional, konsultasi intensif, dan persiapan portofolio industri.',
+            cards: [
+              {
+                icon: BookOpenCheck,
+                title: 'Materi Lanjutan',
+                items: data.advancedSkills,
+              },
+              {
+                icon: Users,
+                title: 'Biaya Kursus',
+                items: [
+                  'Durasi 10x pertemuan / 2 Jam',
+                  'Biaya Rp. 3.000.000,-',
+                  'Kelas Privat (1 Siswa : 1 Pengajar)',
+                ],
+              },
+            ],
+          },
+        }),
   }
 
-  const active = sectionMap[sectionLabel] || sectionMap.Dasar
+  const active =
+    sectionMap[sectionLabel] ||
+    sectionMap.Program ||
+    sectionMap['Level 1'] ||
+    sectionMap.Dasar
 
   return (
     <section className="space-y-6">
