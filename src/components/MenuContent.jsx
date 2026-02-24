@@ -455,7 +455,7 @@ function ContactUsContent() {
       >
         <div className="grid gap-5 lg:grid-cols-2">
           <div className="space-y-5">
-            <p className="text-sm leading-relaxed text-slate-300">
+            <p className="text-base leading-relaxed text-slate-300">
               Jika kamu tertarik bergabung di program GDC, kamu bisa langsung menghubungi kontak kami
               untuk konsultasi kelas, jadwal belajar, dan informasi pendaftaran. Kamu juga bisa datang
               langsung ke workshop kami untuk melihat suasana belajar dan berdiskusi program yang paling
@@ -464,16 +464,16 @@ function ContactUsContent() {
             <div>
               <div className="mb-2 flex items-center gap-2 text-blue-200">
                 <Phone className="h-4 w-4" />
-                <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">Phone</h3>
+                <h3 className="text-base font-semibold uppercase tracking-[0.14em]">Phone</h3>
               </div>
-              <p className="text-sm text-slate-300">{phoneText}</p>
+              <p className="text-base text-slate-300">{phoneText}</p>
             </div>
             <div>
               <div className="mb-2 flex items-center gap-2 text-blue-200">
                 <MapPin className="h-4 w-4" />
-                <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">Address</h3>
+                <h3 className="text-base font-semibold uppercase tracking-[0.14em]">Address</h3>
               </div>
-              <p className="text-sm leading-relaxed text-slate-300">{addressText}</p>
+              <p className="text-base leading-relaxed text-slate-300">{addressText}</p>
             </div>
           </div>
           <div className="w-full max-w-[340px] overflow-hidden rounded-xl border border-white/10 lg:justify-self-end">
