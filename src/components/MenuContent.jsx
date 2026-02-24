@@ -3,7 +3,6 @@ import {
   BookOpenCheck,
   CalendarCheck2,
   Clock3,
-  Mail,
   MapPin,
   Paintbrush2,
   Phone,
@@ -211,14 +210,14 @@ const updateContent = {
   },
 }
 
-function ContentCard({ icon: Icon, title, items }) {
+function ContentCard({ icon: Icon, title, items, className = '' }) {
   return (
     <motion.article
       initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.3 }}
-      className="rounded-2xl border border-white/10 bg-slate-900/60 p-5 backdrop-blur-md"
+      className={`rounded-2xl border border-white/10 bg-slate-900/60 p-5 backdrop-blur-md ${className}`}
     >
       <div className="mb-3 flex items-center gap-2 text-blue-200">
         <Icon className="h-4 w-4" />
@@ -436,30 +435,59 @@ function CourseMenuContent({ selection }) {
 }
 
 function ContactUsContent() {
+  const addressText =
+    'Workshop GDC, Jl. Komp. Villa Ciomas Indah Blok O-5 No.3 Kel. Ciomas Rahayu Kec. Ciomas Bogor, Jawa Barat'
+  const phoneText = '+6287870025212 (WhatsApp)'
+
   return (
     <section className="space-y-6">
       <Banner
         label="General Menu"
         title="Contact Us"
-        description="Hubungi tim GDC untuk informasi pendaftaran, konsultasi kelas, atau kunjungan langsung ke kampus."
+        description="Hubungi GDC untuk pendaftaran, konsultasi kelas, dan kunjungan kampus."
       />
-      <div className="grid gap-4 lg:grid-cols-3">
-        <ContentCard
-          icon={Phone}
-          title="Phone"
-          items={['+6287870025212 (WhatsApp)']}
-        />
-        <ContentCard
-          icon={Mail}
-          title="Email"
-          items={['info@gdc-design.id', 'admission@gdc-design.id']}
-        />
-        <ContentCard
-          icon={MapPin}
-          title="Address"
-          items={['Jl. Komp. Villa Ciomas Indah Blok O-5 No.3 Kel.Ciomas Rahayu Kec Ciomas Bogor, Jawa Barat']}
-        />
-      </div>
+      <motion.article
+        initial={{ opacity: 0, y: 18 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.3 }}
+        className="rounded-2xl border border-white/10 bg-slate-900/60 p-5 backdrop-blur-md"
+      >
+        <div className="grid gap-5 lg:grid-cols-2">
+          <div className="space-y-5">
+            <p className="text-sm leading-relaxed text-slate-300">
+              Jika kamu tertarik bergabung di program GDC, kamu bisa langsung menghubungi kontak kami
+              untuk konsultasi kelas, jadwal belajar, dan informasi pendaftaran. Kamu juga bisa datang
+              langsung ke workshop kami untuk melihat suasana belajar dan berdiskusi program yang paling
+              sesuai.
+            </p>
+            <div>
+              <div className="mb-2 flex items-center gap-2 text-blue-200">
+                <Phone className="h-4 w-4" />
+                <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">Phone</h3>
+              </div>
+              <p className="text-sm text-slate-300">{phoneText}</p>
+            </div>
+            <div>
+              <div className="mb-2 flex items-center gap-2 text-blue-200">
+                <MapPin className="h-4 w-4" />
+                <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">Address</h3>
+              </div>
+              <p className="text-sm leading-relaxed text-slate-300">{addressText}</p>
+            </div>
+          </div>
+          <div className="w-full max-w-[340px] overflow-hidden rounded-xl border border-white/10 lg:justify-self-end">
+            <iframe
+              title="Workshop GDC Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.43840467028!2d106.76417479999999!3d-6.5923059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c503e73de0e5%3A0x1c25768c917d21cd!2sJl.%20Komp.%20Villa%20Ciomas%20Indah%2C%20Ciomas%20Rahayu%2C%20Kec.%20Ciomas%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016610!5e0!3m2!1sen!2sid!4v1771909507578!5m2!1sen!2sid"
+              className="aspect-square w-full"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </motion.article>
     </section>
   )
 }
