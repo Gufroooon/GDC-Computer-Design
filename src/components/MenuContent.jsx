@@ -21,6 +21,7 @@ export const COURSE_NAMES = [
 
 const TWO_LEVEL_COURSES = ['SketchUp', 'AutoCAD', '3D Studio Max']
 const SINGLE_LEVEL_COURSES = ['Graphic Design']
+const REGISTRATION_FEE = 'Biaya pendaftaran Rp. 50.000,-'
 
 const courseContent = {
   SketchUp: {
@@ -300,6 +301,7 @@ function CourseMenuContent({ selection }) {
                 items: [
                   'Durasi 10x pertemuan / 2 Jam',
                   'Biaya Rp. 1.250.000,-',
+                  REGISTRATION_FEE,
                   'Kelas Privat (1 Siswa : 1 Pengajar)',
                 ],
               },
@@ -319,6 +321,7 @@ function CourseMenuContent({ selection }) {
                 items: [
                   'Durasi 10x pertemuan / 2 Jam',
                   'Biaya Rp. 1.350.000,-',
+                  REGISTRATION_FEE,
                   'Kelas Privat (1 Siswa : 1 Pengajar)',
                 ],
               },
@@ -339,6 +342,7 @@ function CourseMenuContent({ selection }) {
                 items: [
                   'Durasi 10x pertemuan / 2 Jam',
                   'Biaya Rp. 1.450.000,-',
+                  REGISTRATION_FEE,
                   'Kelas Privat (1 Siswa : 1 Pengajar)',
                 ],
               },
@@ -357,6 +361,7 @@ function CourseMenuContent({ selection }) {
                 items: [
                   'Durasi 10x pertemuan / 2 Jam',
                   'Biaya Rp. 1.500.000,-',
+                  REGISTRATION_FEE,
                   'Kelas Privat (1 Siswa : 1 Pengajar)',
                 ],
               },
@@ -378,6 +383,7 @@ function CourseMenuContent({ selection }) {
                 items: [
                   'Durasi 10x pertemuan / 2 Jam',
                   'Biaya Rp. 2.750.000,-',
+                  REGISTRATION_FEE,
                   'Kelas Privat (1 Siswa : 1 Pengajar)',
                 ],
               },
@@ -399,6 +405,7 @@ function CourseMenuContent({ selection }) {
                 items: [
                   'Durasi 10x pertemuan / 2 Jam',
                   'Biaya Rp. 3.000.000,-',
+                  REGISTRATION_FEE,
                   'Kelas Privat (1 Siswa : 1 Pengajar)',
                 ],
               },
@@ -478,8 +485,8 @@ function ContactUsContent() {
           </div>
           <div className="w-full max-w-[340px] overflow-hidden rounded-xl border border-white/10 lg:justify-self-end">
             <iframe
-              title="Workshop GDC Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.43840467028!2d106.76417479999999!3d-6.5923059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c503e73de0e5%3A0x1c25768c917d21cd!2sJl.%20Komp.%20Villa%20Ciomas%20Indah%2C%20Ciomas%20Rahayu%2C%20Kec.%20Ciomas%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016610!5e0!3m2!1sen!2sid!4v1771909507578!5m2!1sen!2sid"
+              title="Kursus GDC Computer Map"
+              src="https://maps.google.com/maps?q=Kursus%20GDC%20Computer%20%40-6.59281,106.764137&z=20&output=embed"
               className="aspect-square w-full"
               allowFullScreen
               loading="lazy"

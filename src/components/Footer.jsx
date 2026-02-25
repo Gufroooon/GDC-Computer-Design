@@ -18,7 +18,7 @@ function Footer() {
           </h4>
           <div className="mt-4 space-y-3 text-slate-200">
             <a className="flex items-start gap-2"
-            href="https://www.google.com/maps/place/Jl.+Komp.+Villa+Ciomas+Indah+Blok+O5+No.7,+Ciomas+Rahayu,+Kec.+Ciomas,+Kabupaten+Bogor,+Jawa+Barat+16610/@-6.5924164,106.7615199,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69c503e614e5c9:0x85a3ee13f3bb1a62!8m2!3d-6.5924164!4d106.7640948!16s%2Fg%2F11h89tk7_7?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D">
+            href="https://www.google.com/maps/search/?api=1&query=-6.59281,106.764137">
               <MapPin className="mt-0.5 h-4 w-4 text-blue-300" />
              Workshop GDC, Vila Ciomas Indah Blok O-5 No.3 Kel.Ciomas Rahayu Kec Ciomas
             </a>
